@@ -100,9 +100,9 @@
                     };
                     request.onsuccess = function(event) {
                         // Fazer algo com request.result!
-                        alert("O nome do SSN 444-44-4444 é " + request.result.nome);
-                        alert("A idade do SSN 444-44-4444 é " + request.result.idade);
-                        alert("A email do SSN 444-44-4444 é " + request.result.email);
+                        //alert("O nome do SSN 444-44-4444 é " + request.result.nome);
+                        //alert("A idade do SSN 444-44-4444 é " + request.result.idade);
+                        //alert("A email do SSN 444-44-4444 é " + request.result.email);
                     };
                 };
             };
@@ -126,5 +126,7 @@
         <?php
         // put your code here
         ?>
+        
+        TESTE
     </body>
 </html>

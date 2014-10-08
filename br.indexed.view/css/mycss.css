@@ -1,0 +1,199 @@
+/* ==========================================================================
+   CSS personalizado
+   ========================================================================== */
+
+
+.copyright{
+    margin-top:60px;
+    width:auto;
+    height:60px;
+    background:#eee;
+}
+.copyright footer{    
+    width:auto;
+    margin:0 auto;
+}
+.copyright footer p{
+    color: #265d72;
+    padding-top: 23px;
+    text-align: center;
+}
+
+.col-md-4 ul li {
+    list-style:none;
+    padding : 0px;
+}
+.col-md-4 {
+    padding : 0px 0px 0px 0px;
+    margin-bottom: 0px;
+}
+.jumbotron {
+    padding: 1%;   
+    margin: 1%;
+}
+
+.navbar {
+
+    margin: 0px;
+}
+
+ul.thumbnails {
+    margin-bottom: 0px;
+    padding : 0px 20px 0px 20px;
+}
+.thumbnail{
+    border: 0%;
+    border-color: #eee;
+}
+
+
+
+#form {
+    background-color: #ddd;
+    width: 50%;
+    margin: auto;
+    padding: 0 10px 10px 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    box-shadow: none;
+}
+
+@media (max-width: 600px) {
+
+    #form {
+        background-color: #ddd;
+        width: 100%;
+        margin: auto;
+        padding: 0 10px 10px 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+        box-shadow: none;
+    }
+}
+
+.carousel{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+    padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+    overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+    margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* RESPONSIVE CSS
+   -------------------------------------------------- */
+
+@media (max-width: 979px) {
+
+    .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+    }
+    .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+    }
+
+    .carousel .item {
+        height: 500px;
+    }
+    .carousel img {
+        width: auto;
+        height: 500px;
+    }
+
+    .featurette {
+        height: auto;
+        padding: 0;
+    }
+    .featurette-image.pull-left,
+    .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .navbar-inner {
+        margin: -20px;
+    }
+
+    .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .carousel .item {
+        height: 100%;
+    }
+    .carousel img {
+        height: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+    }
+    .carousel-caption h1 {
+        font-size: 100%;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+    }
+    .carousel-caption .lead,
+    .carousel-caption .btn {
+        font-size: 100%;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+    .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .carousel-indicators{
+       visibility: hidden;
+    }
+}
