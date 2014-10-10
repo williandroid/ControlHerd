@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title></title>
-        <script>
+        <script type="text/javascript">
 
             var DadosClientes = [
                 {ssn: "444-44-4444", nome: "Bill", idade: 35, email: "bill@company.com"},
@@ -51,6 +51,7 @@
             inserir();
             listarTodos();
             buscar();
+           
             function inserir() {
 
                 var dbRequest = window.indexedDB.open('DB_GadoOn', 4);
@@ -100,7 +101,7 @@
                     };
                     request.onsuccess = function(event) {
                         // Fazer algo com request.result!
-                        //alert("O nome do SSN 444-44-4444 é " + request.result.nome);
+                        alert("O nome do SSN 444-44-4444 é " + request.result.nome);
                         //alert("A idade do SSN 444-44-4444 é " + request.result.idade);
                         //alert("A email do SSN 444-44-4444 é " + request.result.email);
                     };
