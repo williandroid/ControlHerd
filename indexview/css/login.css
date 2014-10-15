@@ -1,0 +1,38 @@
+#form-head {
+    text-align: center;
+}
+
+#login-form {
+    background-color: #ddd;
+    width: 35%;
+    margin: auto;
+    padding: 0 10px 10px 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    box-shadow: none;
+}
+
+@media (max-width: 400px) {
+        #login-form {
+        background-color: #ddd;
+        width: 100%;
+        margin: auto;
+        padding: 0 10px 10px 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+        box-shadow: none;
+    }
+}
+
+.form-control {
+    margin-bottom:10px;
+}
+
+#form-head {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.428571429;
+    color: #333338;
+}
