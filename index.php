@@ -17,6 +17,7 @@
             request.onsuccess = function(event) {
                 // Fazer algo com request.result!
                 var db = request.result;
+                inserir(db);
             };
 
             // Este evento é implementado somente em navegadores mais recentes
@@ -48,23 +49,23 @@
 
 
             };
-            inserir();
+            //inserir();
             listarTodos();
             buscar();
            
-            function inserir() {
+            function inserir( db) {
 
-                var dbRequest = window.indexedDB.open('DB_GadoOn', 4);
-                dbRequest.onsuccess = function(event) {
-                    var db = dbRequest.result;
-                    var db = event.target.result;
+                //var dbRequest = window.indexedDB.open('DB_GadoOn', 4);
+                //dbRequest.onsuccess = function(event) {
+                  //  var db = dbRequest.result;
+                    //var db = event.target.result;
 
                     var myTransaction = db.transaction(["clientes"], "readwrite");
                     var myObjectStore = myTransaction.objectStore("clientes");
 
                     var inserir = myObjectStore.add({ssn: "111111111", nome: "Zé", idade: 18, email: "ze@company.com"});
 
-                };
+                //};
             };
             
 
@@ -95,7 +96,7 @@
                     var myTransaction = db.transaction(["clientes"], "readonly");
                     var myObjectStore = myTransaction.objectStore("clientes");
 
-                    var request = myObjectStore.get("444-44-4444");
+                    var request = myObjectStore.get("111111111");
                     request.onerror = function(event) {
                         // Tratar erro!
                     };
